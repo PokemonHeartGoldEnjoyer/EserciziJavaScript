@@ -19,22 +19,19 @@ let prezzoMinorenni = 5.45;
 let persone = 6;
 
 // definisco l'età
-let anni = 12;
+let anni = 16;
 
 // definisco una variabile di totale
-let tot;
-for(tot = ) {
     // se il sesso è maschile
-    if(anni >= 12) {
+ if(anni <= 12) {
     //      preparo una frase
-        frase = "Il prezzo da pagare è di " + tot ;
+        frase = "Il prezzo da pagare è di " + prezzoMinorenni * persone + " €." ;
     }
     // altrimenti
     else {
     //      preparo l'altra
-        frase = "Benvenuta " + nome;
+        frase = "Il prezzo da pagare è di " + prezzoMaggiorenni * persone + " €." ;
     }
 
     // scrivo la frase  
     console.log(frase);
-}
