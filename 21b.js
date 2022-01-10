@@ -7,13 +7,13 @@ Peruzzi Michele, 2 x diavola
 Ros Andrea, 5 x quattro formaggi
 */
 
-libri = [
+pizze = [
     ['Lil Nasx','Diavola', 2],
     ['Joe Biden','Hawaiana',6],
     ['Ciro Esposito','Napoletana',4]
 ];
 
-for(let i=0; i < libri.length; i++) {
+for(let i=0; i < pizze.length; i++) {
 
-    console.log(libri[i][0]);
+    console.log(pizze[i][0]);
 }
