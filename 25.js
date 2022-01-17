@@ -24,4 +24,4 @@ for(let i=0; i<=carrello.length; i++) {
     }
 }
 
-console.log(carrello)
+console.log(carrello);
