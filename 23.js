@@ -15,7 +15,7 @@ Marzia
 // ciclo for che si passa tutti i nomeri
 for(let i=0; i<nomeri.length; i++) {
 // metto in una variabile il nomero corrente
-    let nommeri
+    let hfguhfarfaj
 }
 
 console.log(nomeri);
