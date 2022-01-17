@@ -17,3 +17,5 @@ for(let i=0; i<nomeri.length; i++) {
 // metto in una variabile il nomero corrente
     let nommeri
 }
+
+console.log(nomeri);
