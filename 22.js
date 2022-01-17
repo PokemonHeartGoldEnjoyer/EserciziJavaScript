@@ -19,7 +19,7 @@ for(let i=0; i<cognomi.length; i++) {
     // metto nella variabile cognome il cognome indicato da i
     let cognome = cognomi[i];
     // metto nella variabile titoli il titolo indicato da i
-    let titolo = titolo[i];
+    let titolo = titoli[i];
     // faccio un push nell'array dipendenti di un nuovo array del tipo [titolo, cognome]
     dipendenti.push([titolo, cognome]);
 }
