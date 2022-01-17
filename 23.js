@@ -17,9 +17,9 @@ for(let i=0; i<nomeri.length; i++) {
 // metto in una variabile il nomero corrente
     let nomero = nomeri[i];
 // metto in una variabile nome il nome prendendolo dal nomero
-    let nome = nomero[0];
+    let nome = nomeri[0];
 // metto in una variabile nome il numero prendendolo dal nomero
-    let numero = nomero[1];
+    let numero = nomeri[1];
 // ciclo for che conta da 1 a numero
     for(let i=1; i<=numero; i++) {
         console.log(nome);
