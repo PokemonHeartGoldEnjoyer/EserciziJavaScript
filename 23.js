@@ -21,7 +21,7 @@ for(let i=0; i<nomeri.length; i++) {
 // metto in una variabile nome il numero prendendolo dal nomero
     let numero = nomero[1];
 // ciclo for che conta da 1 a numero
-    for(let i=0; i == numero; i++) {
+    for(let i=0; i < numero; i++) {
         console.log(nome);
     }
 // scrivo il nome
