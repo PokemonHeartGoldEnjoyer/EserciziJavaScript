@@ -15,7 +15,7 @@ Marzia
 // ciclo for che si passa tutti i nomeri
 for(let i=0; i<nomeri.length; i++) {
 // metto in una variabile il nomero corrente
-    let nomeri = nomeri[0];
+    let nomeri = nomeri[i];
 // metto in una variabile nome il nome prendendolo dal nomero
 
 // metto in una variabile nome il numero prendendolo dal nomero
