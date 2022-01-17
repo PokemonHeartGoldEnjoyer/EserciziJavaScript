@@ -22,7 +22,7 @@ for(let i=0; i<nomeri.length; i++) {
     let numero = nomero[1];
 // ciclo for che conta da 1 a numero
     for(let i=0; i<numero; i++) {
-        console.log(nomeri[i]);
+        console.log(nome);
     }
 // scrivo il nome
 }
