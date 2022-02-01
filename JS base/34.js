@@ -1,5 +1,6 @@
 // Definisci gli oggetti che servono per creare un'applicazione che faccia l'inventyario informatico del CFP.
 
+// JSON JavaScript Object Notation
 
 let Lab20 = {
     tipo: 'aula',
