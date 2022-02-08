@@ -1,26 +1,77 @@
 ReactDOM.render(
     <div>
+        <Navbar 
+            logo="logo.jpg"
+            nome=""
+        />
         <div className="container">
             <div className="row">
                 <div className="col">
                     <Card 
-                        titolo="Panini"
-                        testo="I nostri paninazzi con mortadella e sushi!"
-                        immagine="panino.jpg"
+                        immagine="pizza.jpg"
+                        nome="Panini"
+                        ingredienti="Alghe, escrementi di pantegana"
+                        pezzi={4}
+                        prezzi={5.45}
+                        
                     />
                 </div>
                 <div className="col">
                     <Card 
-                        titolo="Pizza"
-                        testo="La nostra pizzazza con kebab e salmone!"
-                        immagine="pizza.jpg" 
+                        immagine="pizza.jpg"
+                        nome="Panini"
+                        ingredienti="Alghe, escrementi di pantegana"
+                        pezzi={4}
+                        prezzi={5.45} 
                     />
                 </div>
                 <div className="col">
-                    <Card ù
-                        titolo="Gelato" 
-                        testo="Gusti tonno e caviale. Per veri intenditori!"
-                        immagine="gelato.jpg"
+                    <Card
+                        immagine="pizza.jpg"
+                        nome="Panini"
+                        ingredienti="Alghe, escrementi di pantegana"
+                        pezzi={4}
+                        prezzi={5.45}
+                    />
+                </div>
+            </div>
+
+            <div className="row">
+                <div className="col">
+                    <Card 
+                        immagine="pizza.jpg"
+                        nome="Panini"
+                        ingredienti="Alghe, escrementi di pantegana"
+                        pezzi={4}
+                        prezzi={5.45}
+                        
+                    />
+                </div>
+                <div className="col">
+                    <Card 
+                        immagine="pizza.jpg"
+                        nome="Panini"
+                        ingredienti="Alghe, escrementi di pantegana"
+                        pezzi={4}
+                        prezzi={5.45} 
+                    />
+                </div>
+                <div className="col">
+                    <Card
+                        immagine="pizza.jpg"
+                        nome="Panini"
+                        ingredienti="Alghe, escrementi di pantegana"
+                        pezzi={4}
+                        prezzi={5.45}
+                    />
+                </div>
+                <div className="col">
+                    <Card
+                        immagine="pizza.jpg"
+                        nome="Panini"
+                        ingredienti="Alghe, escrementi di pantegana"
+                        pezzi={4}
+                        prezzi={5.45}
                     />
                 </div>
             </div>
