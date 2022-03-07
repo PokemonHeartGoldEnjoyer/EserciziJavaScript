@@ -15,16 +15,16 @@ export default function App() {
     },
     {
       // ogni oggetto ha 2 proprietà : il titolo e l'url da inserire nei link
-      titolo: 'Look',
-      url: 'https://look.negozio-di-moda.com'
+      titolo: 'Tavole',
+      url: 'https://tavole.negozio-di-moda.com'
     },
     {
       titolo: 'Abbigliamento',
       url: 'https://abbigliamento.negozio-di-moda.com'
     },
     {
-      titolo: 'Scarpe',
-      url: 'https://scarpe.negozio-di-moda.com'
+      titolo: 'Vele',
+      url: 'https://Vele.negozio-di-moda.com'
     },
     {
       titolo: 'Sport',
@@ -34,28 +34,22 @@ export default function App() {
 
   let slides = [
     {
-      immagine: 'images/carou1.jpg',
-      titolo: 'Dying Light 2 Stay Human',
+      immagine: 'Carousel.img/Surf1.jpg',
+      titolo: 'Abbigliamenti per surfing e altro!',
       testo: 'Nuove uscite!',
-      prezzo: 'carousel-item active'
+      prezzi: 'carousel-item active'
     },
     {
-      immagine: 'images/carou2.jpg',
-      titolo: 'Grand Theft Auto Original and Remakes',
-      testo: 'Giochi popolari!',
-      prezzo: 'carousel-item'
+      immagine: 'Carousel.img/Surf2.jpg',
+      titolo: 'Tavole da surf nuove solo per te!',
+      testo: ' Anche usate... ',
+      prezzi: 'carousel-item'
     },
     {
-      immagine: 'images/carou3.jpg',
-      titolo: 'Need For Speed Most Wanted 2005',
-      testo: ' Vecchio ma oro!( Old but gold !)',
-      prezzo: 'carousel-item'
-    },
-    {
-      immagine: 'images/carou4.jpg',
-      titolo: 'Need For Speed Most Wanted 2005',
-      testo: ' Vecchio ma oro!( Old but gold !)',
-      prezzo: 'carousel-item'
+      immagine: 'Carousel.img/Surf3.jpg',
+      titolo: 'Vele di tutti i colori!!',
+      testo: 'Di prezzi variabili anche economiche.',
+      prezzi: 'carousel-item'
     }
   ]
   
@@ -64,50 +58,50 @@ export default function App() {
       immagine: 'images/card1.jpg',
       titolo: 'Pullover in maglia',
       testo: 'Esclusivo web',
-      prezzo: ' ̶1̶3̶.̶0̶0̶€̶  9.00€',
+      prezzi: ' ̶1̶3̶.̶0̶0̶€̶  9.00€',
       link: 'https://magliapullover.negozio-di-moda.com'
     },
     {
       immagine: 'images/card2.jpg',
       titolo: 'Pantaloni in voile di cotone',
       testo: 'Eco-design',
-      prezzo: '10,00€',
+      prezzi: '10,00€',
       link: 'https://pantalonicotone.negozio-di-moda.com'
     },
     {
       immagine: 'images/card3.jpg',
       titolo: 'T-shirt in maglia morbida stretch',
       testo: 'Scopri le migliori vendite !',
-      prezzo: '8.00€',
+      prezzi: '8.00€',
       link: 'https://t-shirt.negozio-di-moda.com'
     },
     {
       immagine: 'images/card4.jpg',
       titolo: 'T-shirt Disney stampa Hollywood',
       testo: 'Eco-design',
-      prezzo: 'carousel-item',
+      prezzi: 'carousel-item',
       link: 'https://t-shirt.negozio-di-moda.com'
     },
     {
       immagine: 'images/card5.jpg',
       titolo: 'Blusa in garza di cotone',
       testo: 'Scopri le migliori vendite !',
-      prezzo: '20,00€',
+      prezzi: '20,00€',
       link: 'https://garzacotone.negozio-di-moda.com'
     },
     {
       immagine: 'images/card6.jpg',
       titolo: 'Jeans taglio slim L32',
       testo: 'Scopri le migliori vendite !',
-      prezzo: ' ̶2̶0̶.̶0̶0̶€̶ 12,00€',
+      prezzi: ' ̶2̶0̶.̶0̶0̶€̶ 12,00€',
       link: 'https://jeans.negozio-di-moda.com'
     }
   ]
 
   return (
     <div>
+      <NavbarJack logo = 'images/logo.jpg' nome="Negozio Surfing!" links={ links } />
       <Carousel slides = {slides} />
-      <Navbar logo = 'images/logo.jpeg' nome="Negozio di moda!" links={ links } />
 
       <div className="container">
         <div className="row">
