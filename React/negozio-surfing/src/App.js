@@ -53,78 +53,104 @@ export default function App() {
     }
   ]
   
-  let cards = [
+  let tavole = [
     {
-      immagine: 'images/card1.jpg',
-      titolo: 'Pullover in maglia',
-      testo: 'Esclusivo web',
-      prezzi: ' ̶1̶3̶.̶0̶0̶€̶  9.00€',
-      link: 'https://magliapullover.negozio-di-moda.com'
+      titolo:"Tavola1",
+      testo:"Questa è una tavola",
+      immagine:"Cards.img/Tavola1.jpg",
+      link:"https://tavole.negozio-surfing.it" 
     },
     {
-      immagine: 'images/card2.jpg',
-      titolo: 'Pantaloni in voile di cotone',
-      testo: 'Eco-design',
-      prezzi: '10,00€',
-      link: 'https://pantalonicotone.negozio-di-moda.com'
+      titolo:"Tavola2",
+      testo:"Questa è una tavola",
+      immagine:"Cards.img/Tavola2.jpg",
+      link:"https://tavole.negozio-surfing.it" 
     },
     {
-      immagine: 'images/card3.jpg',
-      titolo: 'T-shirt in maglia morbida stretch',
-      testo: 'Scopri le migliori vendite !',
-      prezzi: '8.00€',
-      link: 'https://t-shirt.negozio-di-moda.com'
-    },
-    {
-      immagine: 'images/card4.jpg',
-      titolo: 'T-shirt Disney stampa Hollywood',
-      testo: 'Eco-design',
-      prezzi: 'carousel-item',
-      link: 'https://t-shirt.negozio-di-moda.com'
-    },
-    {
-      immagine: 'images/card5.jpg',
-      titolo: 'Blusa in garza di cotone',
-      testo: 'Scopri le migliori vendite !',
-      prezzi: '20,00€',
-      link: 'https://garzacotone.negozio-di-moda.com'
-    },
-    {
-      immagine: 'images/card6.jpg',
-      titolo: 'Jeans taglio slim L32',
-      testo: 'Scopri le migliori vendite !',
-      prezzi: ' ̶2̶0̶.̶0̶0̶€̶ 12,00€',
-      link: 'https://jeans.negozio-di-moda.com'
+      titolo:"Tavola3",
+      testo:"Questa è una tavola",
+      immagine:"Cards.img/Tavola3.jpg",
+      link:"https://tavole.negozio-surfing.it" 
     }
   ]
+  let elementi_tavole = tavole.map(prodotto => <Card 
+                                                  titolo = { prodotto.titolo } 
+                                                  testo = { prodotto.testo } 
+                                                  immagine = { prodotto.immagine } 
+                                                  link = { prodotto.link } 
+                                                />
+  )
 
+  let vele = [
+    {
+      titolo:"Vela1",
+      testo:"Questa è una tavola",
+      immagine:"Cards.img/Vela1.jpg",
+      link:"https://vele.negozio-surfing.it" 
+    },
+    {
+      titolo:"Tavola2",
+      testo:"Questa è una tavola",
+      immagine:"Cards.img/Vela2.jpg",
+      link:"https://vele.negozio-surfing.it" 
+    },
+    {
+      titolo:"Tavola3",
+      testo:"Questa è una tavola",
+      immagine:"Cards.img/Vela3.jpg",
+      link:"https://vele.negozio-surfing.it" 
+    }
+  ]
+  let elementi_vele = vele.map(prodotto => <Card 
+                                                  titolo = { prodotto.titolo } 
+                                                  testo = { prodotto.testo } 
+                                                  immagine = { prodotto.immagine } 
+                                                  link = { prodotto.link } 
+                                                />
+  )
+
+  let abbigliamento = [
+    {
+      titolo:"Tavola1",
+      testo:"Questa è una tavola",
+      immagine:"Cards.img/Abb1.jpg",
+      link:"https://vele.negozio-surfing.it" 
+    },
+    {
+      titolo:"Tavola2",
+      testo:"Questa è una tavola",
+      immagine:"Cards.img/Abb2.jpg",
+      link:"https://vele.negozio-surfing.it" 
+    },
+    {
+      titolo:"Tavola3",
+      testo:"Questa è una tavola",
+      immagine:"Cards.img/Abb3.jpg",
+      link:"https://vele.negozio-surfing.it" 
+    }
+  ]
+  let elementi_abbigliamento = abbigliamento.map(prodotto => <Card 
+                                                  titolo = { prodotto.titolo } 
+                                                  testo = { prodotto.testo } 
+                                                  immagine = { prodotto.immagine } 
+                                                  link = { prodotto.link } 
+                                                />
+  )
+  
   return (
     <div>
-      <NavbarJack logo = 'images/logo.jpg' nome="Negozio Surfing!" links={ links } />
+      <NavbarJack logo = 'Cards.img/logo.jpg' nome="Negozio Surfing!" links={ links } />
       <Carousel slides = {slides} />
 
       <div className="container">
         <div className="row">
-          <div className="col">
-            <Card cards={cards[0]} />
-          </div>
-          <div className="col">
-            <Card cards={cards[1]} />
-          </div>
-          <div className="col">
-            <Card cards={cards[2]} />
-          </div>
+         {elementi_tavole}
         </div>
         <div className="row">
-          <div className="col">
-            <Card cards={cards[3]} />
-          </div>
-          <div className="col">
-            <Card cards={cards[4]} />
-          </div>
-          <div className="col">
-            <Card cards={cards[5]} />
-          </div>
+         {elementi_vele}
+        </div>
+        <div className="row">
+         {elementi_abbigliamento}
         </div>
       </div>
 

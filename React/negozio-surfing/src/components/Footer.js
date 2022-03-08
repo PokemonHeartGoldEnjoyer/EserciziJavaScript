@@ -17,7 +17,7 @@ export default function Footer(props) {
 
         Designed by<br />
        <div class="credits">
-       <p> ULIANA </p>  
+       <p> SIMAKOU </p>  
         </div>
         
     </footer>

@@ -1,17 +1,14 @@
 export default function Card(props) {
-    let elementi = props.cards.map(card => 
-        <div>
-            <img src={card.immagine}/>
-            <div class="card-body">
-                <h5>{ card.titolo }</h5>
-                <p>{ card.testo }</p>
-                <a href={ card.url } class="btn btn-primary">{card.prezzi}</a>
+    return (
+        <div className="col" m-5>
+            <div class="card">
+                <img src={props.immagine} class="card-img-top" alt="..."/>
+                <div class="card-body">
+                    <h5 class="card-title">{ props.titolo }</h5>
+                    <p class="card-text">{ props.testo }</p>
+                    <a href={ props.link } class="btn btn-primary">Mostra altro</a>
+                </div>
             </div>
         </div>
-)
-    return(
-        <div class="card" style="width: 18rem;">
-            {elementi}
-      </div>
     )
 }
